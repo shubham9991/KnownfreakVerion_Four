@@ -10,6 +10,7 @@
 
 /* **************NAVBAR************** */
 
+
 .navbar {
     display: flex;
     align-items: center;
@@ -57,113 +58,7 @@
 }
 
 
-/* ***************HERO****************** */
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 90vh;
-    /* background-color: blueviolet; */
-}
-
-.One-Text {
-    font-family: "DM Sans", sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 300;
-}
-
-hr {
-    width: 180px;
-    margin-top: 5px;
-}
-
-.hero-text {
-    font-family: "DM Serif Display", serif;
-    font-size: 4rem;
-    font-weight: 600;
-    font-style: italic;
-    margin-top: 25px;
-}
-
-.hero-subText {
-    font-family: "DM Sans", sans-serif;
-    font-size: 1rem;
-    width: 330px;
-    margin-top: 15px;
-}
-
-
-.hero .cta-btn-sec1 {
-    margin-top: 64px;
-}
-
-.cta-btn-sec1 {
-    display: flex;
-    align-items: center;
-    padding: 13px 25px;
-    background-color: #1A1A1A;
-    color: #fff;
-    font-size: 0.9rem;
-    font-family: "DM Sans", sans-serif;
-    border-radius: 32px;
-    -webkit-border-radius: 32px;
-    -moz-border-radius: 32px;
-    -ms-border-radius: 32px;
-    -o-border-radius: 32px;
-    border-style: none;
-
-}
-
-.cta-btn-sec1 span {
-    padding-left: 10px;
-}
-
-.scroll-D {
-    position: absolute;
-    left: 0;
-    bottom: 60px; 
-    display: flex;
-    align-items: center;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    font-family: "DM Sans", sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    text-decoration: none;
-    color: #0000004b;
-}
-
-.scroll-D img {
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    margin-right: 5px;
-}
-
-@media (max-width: 1240px) {
-    .hero-text {
-        font-size: 3rem;
-    }
-    .cta-btn {
-        padding: 10px 17px;
-    }
-}
-
-
 @media (max-width: 960px) {
-    .hero-text {
-        font-size: 2.5rem;
-    }
-
     .nav-links {
         gap: 25px;
     }
@@ -172,18 +67,6 @@ hr {
 @media (max-width: 830px) {
     .nav-links, .cta-btn {
         display: none;
-    }
-    .hero {
-        align-items: flex-start;
-        padding-left: 60px;
-        text-align: left;
-    }
-    .hero-text {
-        width: 350px;
-    }
-    hr {
-        width: 130px;
-        margin-top: 5px;
     }
     .scroll-D {
         left: auto !important;
@@ -261,252 +144,37 @@ hr {
     }
 }
 
-/* Section 2 */
 
-.Section-two {
+
+.faq-hero {
     display: flex;
-    flex-direction: column;
+    padding: 50px;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    /* background-color: #ac4646; */
-    text-align: center;
+    justify-content: space-between;
 }
 
-.mission {
-    font-family: "DM Sans", sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 300;
-    /* margin-bottom: 30px; */
-}
-
-.Section-two hr {
-    width: 180px;
-    margin-top: 5px;
-    margin-bottom: 40px;
-}
-
-.small-head {
-    font-family: "DM Sans", sans-serif;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 400;
-}
-
-.mid-head{
+.hero-head {
     font-family: "DM Serif Display", serif;
-    font-weight: 600;
-    font-style: italic;
-    font-size: 7rem;
-}
-
-.big-head {
-    font-family: "DM Serif Display", serif;
-    font-weight: 600;
+    font-weight: 700;
     font-style: italic;
     font-size: 3.5rem;
-}
-
-.Section-two sup {
-    font-family: "DM Sans", sans-serif;
-    /* font-size: 2.7rem; */
-    font-style: normal;
-    font-weight: 200;
+    width: 600px;
 }
 
 
-/* SECTION 3 */
-
-.section-three {
+.faq-body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    height: 100vh;
-    padding-top: 50px;
-}
-
-/* .section-three hr {
-    width: 280px;
-} */
-
-.provide {
-    font-family: "DM Sans", sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 300;
-    text-align: center
-}
-
-
-
-.cards {
-    display: flex;
-    flex-direction: row;
-}
-
-.card-one, .card-two, .card-three, .card-four {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 60%;
-    width: 70%;
     padding: 50px;
-    position: relative;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    border: 1px solid #d5d5d5;
-    margin-top: 50px;
 }
 
-.card-one-head {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
-    margin-bottom: 20px;
+.left-paras {
+    flex: 0 0 30%; /* This will make the left-paras div take up 30% of the faq-body width */
 }
 
-.card-one-sub-head {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 1.4rem;
+.right-subparas {
+    flex: 1; /* This will make the right-subparas div take up the remaining space */
 }
 
-
-/* SECTION 4 */
-
-.section-four {
-    height: 100vh;
-    background-color: chocolate;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.normal-text {
-    font-family: "DM Sans", sans-serif;
-    
-    font-size: 5rem;
-    font-style: normal;
-    font-weight: 400;
-}
-
-.italix-text {
-    font-family: "DM Serif Display", serif;
-
-    font-weight: 600;
-    font-style: italic;
-    font-size: 5rem;
-}
-
-.section-four button {
-    margin-top: 40px !important;
-}
-
-
-
-/* Section5 */
-
-.section-five {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.small-head-five {
-    font-family: "DM Sans", sans-serif;
-    
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 400;
-}
-
-.big-head-five {
-    font-family: "DM Serif Display", serif;
-
-    font-weight: 500;
-    font-style: italic;
-    font-size: 3rem;
-    /* color: #e1e1e1; */
-}
-
-.form {
-    display: flex;
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.form-left {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.form-left input, .form-right textarea {
-    padding: 10px;
-    background-color: #e1e2e3;
-    border: none;
-    border-radius: 10px;
-
-    font-family: "DM Sans", sans-serif;
-    
-    font-size: 0.9rem;
-    font-style: normal;
-    font-weight: 400;
-    width: 300px;
-    resize: none;
-}
-
-.form-right {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.form-right button {
-    background-color: #1A1A1A;
-    color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-/* FAQ */
-
-.faq {
-    display: flex;
-    flex-direction: row;
-}
-
-
-.left-Head-faq,
-.right-Head-faq {
-  flex: 1;
-  padding: 1rem; 
-  border: 1px solid #ddd; 
-  padding: 50px;
-}
-
-.right-Head-faq {
-    font-family: "DM Sans", sans-serif;
-    /* padding-right: 50px; */
-}
-
-.left-Head-faq {
-    /* padding-left: 50px; */
-}
 
 .fa-faq {
     font-family: "DM Sans", sans-serif;
@@ -543,7 +211,13 @@ img {
 /* >>> FAQ STYLES <<< */
 .faq_container { 
     border-bottom: 2px solid #ddd; 
+    font-family: "DM Sans", sans-serif;
 }
+
+.Q-stack {
+    margin-top: 100px;
+}
+
 .faq_question {
   font-size: 1.2rem;
   font-weight: 600;
@@ -615,54 +289,30 @@ img {
   transition: all 0.5s ease;
 }
 
-/* ===> SOME SUGGESTIONS ON USING THE CODE <=== */
-/* There are 2 Main containers in a single FAQ Container - faq_question & answercont */
-/* You can make a div inside these container to add content and styling purposes */
-
-
-
-/* CATEGORIES************************************* */
-
-.category {
-    display: flex; /* Make the container a flexbox */
-  }
-  
-  .left-Head-category {
+.sec-three {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    column-gap: 30px;
-    flex: 3; /* Take up 60% of the available space */
-    padding: 1rem; /* Add some padding for better visual separation */
-    border: 1px solid #ddd; /* Optional: Add a border for clarity */
-  }
-  
-  .right-Head-category {
-    flex: 1; /* Take up 40% of the available space */
-    padding: 1rem; /* Add some padding for better visual separation */
-    border: 1px solid #ddd; /* Optional: Add a border for clarity */
-  }
-
-  .left-Head-category, .right-Head-category {
-    padding: 50px;
-  }
-
-  
-.category-one {
-    background-color: #E4E4E4;
-    padding: 30px;
+    margin-top: 100px;
 }
 
-.category-text {
-    display: flex;
-    gap: 50px;
+.bottom-img {
+    width: 700px;
 }
 
-.ca-category {
-    text-align: right;
+.leaveEvery {
+    font-family: "DM Serif Display", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3.5rem;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
+
+
+
+
 
 
 
@@ -771,7 +421,7 @@ input[type="email"] {
     outline: none; /* Remove outline */
     color: #1A1A1A;
     width: 350px;
-    padding-bottom: 29px;
+    padding-bottom: 9px;
 
 }
 
@@ -782,7 +432,7 @@ input[type="email"]::placeholder {
     font-size: 1rem;
     font-style: normal;
     font-weight: 600;
-    padding-bottom: 29px;
+    /* padding-bottom: 29px; */
 }
 
 
@@ -800,5 +450,6 @@ input[type="email"]::placeholder {
     -ms-border-radius: 32px;
     -o-border-radius: 32px;
     border-style: none;
-    margin-top: 10px;
+    margin-top: 20px;
+
 }
