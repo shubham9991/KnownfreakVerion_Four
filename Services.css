@@ -194,10 +194,108 @@ body {
 /* SECTION TWO */
 
 .section-two {
-    6 
+    padding: 50px;
 }
 
 .dev {
     display: flex;
     justify-content: space-between;
+}
+
+.dev > * {
+    flex: 1 0 50%; 
+}
+
+.two-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    padding-left: 50px;
+}
+
+.steps {
+    display: inline;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #1A1A1A;
+    padding: 9px 30px;
+    border: 2px solid #857f7f;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+
+.left-title {
+    font-family: "DM Serif Display", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3rem;
+    color: #1A1A1A;
+    margin-top: 20px;
+}
+
+.left-subPara {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #1A1A1A;
+    margin-top: 20px;
+}
+
+.left-cta-btn {
+    display: flex;
+    align-items: center;
+    padding: 13px 25px;
+    background-color: #1A1A1A;
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    border-style: none;
+    margin-top: 30px;
+}
+
+.services-card-one, .services-card-two, .services-card-three, .services-card-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: 500px;
+    width: 500px;
+}
+
+.card-title {
+    /* font-family: "DM Serif Display", serif; */
+    font-family: "DM Sans", sans-serif;
+
+    font-weight: 500;
+    /* font-style: italic; */
+    font-size: 2.1rem;
+    color: #1A1A1A;
+}
+
+.card-desc {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #736868;
+    padding-top: 20px;
 }
