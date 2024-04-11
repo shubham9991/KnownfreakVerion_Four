@@ -256,32 +256,43 @@ hr {
 /* SECTION 4 */
 
 .section-four {
+  position: relative;
   height: 100vh;
-  background-color: chocolate;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+}
+
+#bimg {
+  width: 100%;
+  height: 100vh;
+  /* background-color: brown; */
+}
+
+#bimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left-head-four {
+  position: absolute;
+  top: 40vh;
+  padding-left: 50px;
 }
 
 .normal-text {
   font-family: "DM Sans", sans-serif;
-
   font-size: 5rem;
   font-style: normal;
   font-weight: 400;
+  color: #e4e4e4;
 }
 
 .italix-text {
   font-family: "DM Serif Display", serif;
-
+  color: #e4e4e4;
   font-weight: 600;
   font-style: italic;
   font-size: 5rem;
-}
-
-.section-four button {
-  margin-top: 40px !important;
 }
 
 /* Section5 */

@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -171,12 +176,191 @@
     </section>
 
     <div class="section-four">
-      <div class="normal-text">Designing your next</div>
-      <div class="italix-text">Big thing!</div>
-      <button class="cta-btn-sec1">
-        <img src="Assets\Arrow.svg" alt="" />
-        <span>Get in touch</span>
-      </button>
+      <div id="bimg">
+        <img class="imgOne" src="Assets\one.png" alt="" />
+        <img class="imgOne" src="Assets\two.png" alt="" />
+      </div>
+      <div class="left-head-four">
+        <div class="normal-text">Designing your next</div>
+        <div class="italix-text">Big thing!</div>
+      </div>
+      <div class="right-head-four">
+        <form
+          id="myForm"
+          style="
+            position: absolute;
+            top: 19vh;
+            right: 50px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(18px);
+            padding: 30px 30px 30px 30px;
+            border-radius: 20px;
+            width: 40vw;
+            border: #ccc solid 2px;
+          "
+        >
+          <div class="form-group">
+            <h2
+              style="
+                color: #fff;
+                margin-bottom: 30px;
+                font-family: 'Work Sans', sans-serif;
+              "
+            >
+              Get Project quotation ASAP!
+            </h2>
+            <label
+              for="name"
+              style="
+                display: block;
+                margin-bottom: 10px;
+                font-size: 17px;
+                color: #fff;
+                font-family: 'Work Sans', sans-serif;
+              "
+              >Name*</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              style="
+                width: 100%;
+                height: 45px;
+                padding: 8px;
+                margin-bottom: 24px;
+                font-size: 18px;
+                border-radius: 8px;
+                border: 0px;
+                background-color: #f1f1f1;
+                font-family: 'Work Sans', sans-serif;
+                font-size: 0.9rem;
+              "
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label
+              for="phone"
+              style="
+                display: block;
+                color: #fff;
+                margin-bottom: 10px;
+                font-size: 17px;
+                font-family: 'Work Sans', sans-serif;
+              "
+              >Phone Number*</label
+            >
+            <div class="input-group">
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                style="
+                  width: 100%;
+                  height: 45px;
+                  padding: 8px;
+                  margin-bottom: 24px;
+                  font-size: 18px;
+                  border: 1px solid #ccc;
+                  border-radius: 11px;
+                  background-color: #f1f1f1;
+                  font-family: 'Work Sans', sans-serif;
+                  font-size: 0.9rem;
+                "
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label
+              for="email"
+              style="
+                display: block;
+                color: #fff;
+                margin-bottom: 10px;
+                font-size: 17px;
+                font-family: 'Work Sans', sans-serif;
+              "
+              >Email*</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              style="
+                width: 100%;
+                height: 45px;
+                padding: 8px;
+                margin-bottom: 24px;
+                font-size: 18px;
+                border: 1px solid #ccc;
+                border-radius: 11px;
+                background-color: #f1f1f1;
+                font-family: 'Work Sans', sans-serif;
+                font-size: 0.9rem;
+              "
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label
+              for="date"
+              style="
+                display: block;
+                color: #fff;
+                margin-bottom: 10px;
+                font-size: 17px;
+                font-family: 'Work Sans', sans-serif;
+              "
+              >Date*</label
+            >
+            <input
+              type="Date"
+              class="form-control"
+              id="date"
+              name="date"
+              style="
+                width: 100%;
+                height: 45px;
+                padding: 8px;
+                margin-bottom: 24px;
+                font-size: 18px;
+                border: 1px solid #ccc;
+                border-radius: 11px;
+                background-color: #f1f1f1;
+                font-family: 'Work Sans', sans-serif;
+                font-size: 0.9rem;
+              "
+              required
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="
+              border-radius: 10px;
+              background: #263238;
+              color: #fff;
+              padding: 15px 25px 15px 25px;
+              font-size: 1rem;
+              font-family: 'Work Sans', sans-serif;
+            "
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
 
     <div class="section-five">
@@ -439,6 +623,36 @@
     ></script>
 
     <script src="https://unpkg.com/aatjs/dist/aat.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
+      integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"
+      integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
 
     <script src="script.js"></script>
   </body>
