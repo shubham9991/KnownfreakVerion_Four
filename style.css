@@ -1,11 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 /* **************NAVBAR************** */
@@ -144,6 +153,10 @@ hr {
   margin-right: 5px;
 }
 
+a.scroll-D {
+  scroll-behavior: smooth;
+}
+
 /* Section 2 */
 
 .Section-two {
@@ -204,11 +217,34 @@ hr {
 
 #horizontal-scoll {
   padding: 200px 0;
-  background-color: #fff;
+  background-color: #f3f3f3;
 }
 
 .horizontal-scoll-wrapper {
   overflow: hidden;
+}
+
+.section-three img {
+  height: 90px;
+}
+
+.title {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 2.5rem;
+  /* letter-spacing: 2px; */
+  font-style: normal;
+}
+
+.description {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  color: #969393;
+  margin-top: 25px;
+  /* letter-spacing: 1px; */
 }
 
 .horizontal {
@@ -231,11 +267,11 @@ hr {
   padding: 0 15px 0 5px;
 }
 
-.horizontal > div:nth-child(2) .card-lap,
+/* .horizontal > div:nth-child(2) .card-lap,
 .horizontal > div:nth-child(3) .card-lap {
   height: 425px;
   width: 800px;
-}
+} */
 
 .horizontal .card-lap {
   display: flex;
@@ -243,10 +279,10 @@ hr {
   justify-content: space-between;
   width: 900px;
   height: 525px;
-  padding: 50px 40px;
+  padding: 70px 60px;
   border-radius: 18px;
   color: #1a1a1a;
-  background-color: bisque;
+  background-color: #fff;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
   -ms-border-radius: 18px;
@@ -255,45 +291,9 @@ hr {
 
 /* SECTION 4 */
 
-.section-four {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-}
 
-#bimg {
-  width: 100%;
-  height: 100vh;
-  /* background-color: brown; */
-}
 
-#bimg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-.left-head-four {
-  position: absolute;
-  top: 40vh;
-  padding-left: 50px;
-}
-
-.normal-text {
-  font-family: "DM Sans", sans-serif;
-  font-size: 5rem;
-  font-style: normal;
-  font-weight: 400;
-  color: #e4e4e4;
-}
-
-.italix-text {
-  font-family: "DM Serif Display", serif;
-  color: #e4e4e4;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 5rem;
-}
 
 /* Section5 */
 
@@ -715,7 +715,7 @@ input[type="email"] {
   width: 350px;
   padding-bottom: 10px;
   font-family: "DM Sans", sans-serif;
-
+  background-color: transparent;
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -785,6 +785,9 @@ input[type="email"]::placeholder {
   .fq-faq {
     font-size: 2.2rem;
   }
+  .section-four {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 830px) and (max-width: 960px) {
@@ -828,13 +831,10 @@ input[type="email"]::placeholder {
 }
 
 @media (max-width: 830px) {
-  .nav-links,
-  .cta-btn {
-    display: none;
-  }
-  /* .section-three {
-    height: 5000px;
-  } */
+.navbar {
+  display: none;
+}
+
   .hero {
     align-items: flex-start;
     padding-left: 60px;
@@ -852,23 +852,100 @@ input[type="email"]::placeholder {
     bottom: auto !important;
     right: -30px !important;
   }
-  .menu {
+
+  #mains {
+    height: 100%;
+    width: 100%;
+    background-color: #263238;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 50px;
+    color: #fff;
+}
+
+#nav h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.5rem;
+    font-weight: 800;
+}
+
+#nav i {
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#full {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.555);
+    top: -100%;
+    left: 0;
+    backdrop-filter: blur(18px);
+    padding: 160px 50px;
+}
+#full a {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  color: #263238;
+  font-size: 5rem;
+  font-weight: 500;
+  /* margin-bottom: 200px; */
+  padding-bottom: 50px;
+  position: relative; /* Add this line */
+}
+
+#full a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #263238;
+  transition: width 0.3s ease; /* Add transition for width */
+}
+
+#full a:hover::after {
+  width: 100%; /* Expand the underline from left to right */
+}
+
+
+#full i {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    font-weight: 500;
+    font-size: 45px;
+    cursor: pointer;
+}
+  /* .menu {
     position: fixed;
     background-color: blueviolet !important;
-    top: -70vh; /* Start off the screen */
+    top: -70vh; 
     left: 0;
     width: 100%;
     height: 70vh;
     background-color: white;
     transition: top 0.3s ease-in-out;
-    z-index: 1000; /* Ensure the menu appears above other content */
-  }
+    z-index: 1000;
+  } */
 
-  .menu.open {
-    top: 0; /* Slide down to appear on the screen */
-  }
+  /* .menu.open {
+    top: 0; 
+  } */
 
-  .close-btn {
+  /* .close-btn {
     position: absolute;
     right: 0 !important;
     margin-right: 60px;
@@ -879,7 +956,7 @@ input[type="email"]::placeholder {
   .cta-btn-mob {
     padding-top: 16px;
     margin-left: 60px;
-  }
+  } */
 
   .nav-links-mob {
     display: flex !important;
@@ -893,7 +970,7 @@ input[type="email"]::placeholder {
     margin-top: 30px;
   }
 
-  .cta-btn-mob {
+  /* .cta-btn-mob {
     display: flex;
     align-items: center;
     padding: 13px 25px;
@@ -912,7 +989,7 @@ input[type="email"]::placeholder {
 
   .cta-btn-mob span {
     padding-left: 10px;
-  }
+  } */
 
   .normal-text,
   .italix-text {
@@ -929,6 +1006,10 @@ input[type="email"]::placeholder {
   }
 
   .card__inner {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     will-change: transform;
     background: white;
     height: 500px;
@@ -959,23 +1040,36 @@ input[type="email"]::placeholder {
   }
 
   .card__content {
-    padding: 40px 30px;
+    /* padding: 24px; */
     display: flex;
     flex-direction: column;
   }
 
   .card__title {
-    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 2.5rem;
+    /* letter-spacing: 2px; */
+    font-style: normal;
+    /* padding: 0;
     margin: 0;
     font-size: 60px;
-    font-weight: 600;
-    color: #16263a;
+    font-weight: 600; */
+    /* color: #16263a; */
   }
 
   .card__description {
-    line-height: 1.4;
-    font-size: 24px;
-    color: #16263a;
+    /* line-height: 1.4;
+    font-size: 24px; */
+    /* color: #16263a; */
+    font-family: "DM Sans", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  color: #969393;
+  margin-top: 25px;
+  line-height: 1.3;
   }
 
   .space {
@@ -987,12 +1081,20 @@ input[type="email"]::placeholder {
   }
 
   @media (max-width: 600px) {
+    #nav {
+      padding: 24px;
+    }
     .navbar {
       padding: 16px 32px;
     }
 
+    #full a {
+      font-weight: 600;
+      font-size: 4rem;
+    }
+
     .hero {
-      padding-left: 32px;
+      padding-left: 24px !important;
     }
 
     .hero-text {
@@ -1065,19 +1167,25 @@ input[type="email"]::placeholder {
 }
 
 @media (min-width: 830px) {
-  .menu-btn {
+  /* .menu-btn {
     display: none;
   }
 
   .menu {
     display: none;
-  }
+  } */
   .cards {
+    display: none;
+  }
+  #mains {
     display: none;
   }
 }
 
 @media (max-width: 470px) {
+  #full {
+    padding: 160px 24px;
+}
   .hero-text {
     font-size: 1.8rem;
   }
@@ -1125,6 +1233,10 @@ input[type="email"]::placeholder {
 }
 
 @media (max-width: 425px) {
+  #full a {
+    font-weight: 600;
+    font-size: 3rem;
+  }
   .fa-faq {
     font-size: 1.2rem;
   }
@@ -1179,5 +1291,12 @@ input[type="email"]::placeholder {
   }
   input[type="email"] {
     width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  #full a {
+    font-weight: 600;
+    font-size: 2rem;
   }
 }

@@ -11,114 +11,35 @@
             box-sizing: border-box;
         }
 
-        .container {
-            width: 100%;
-            height: 100vh;
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            background-color: #e2e2e2;
+        
+        .section-top {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100vw;
+          height: 100px;
         }
 
-        .outer {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            overflow-y: auto;
-            scroll-snap-type: x mandatory;
+        .top-hr {
+          width: 85%;
+          margin: 20px 0px;
+          color: #1a1a1a;
+          background-color: #1a1a1a;
         }
-
-        .outer::-webkit-scrollbar{
-            display: none;
-        }
-
-        .card{
-            flex: 0 0 auto;
-            margin: 0 50px;
-            padding: 50px;
-            width: 70%;
-            height: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            /* align-items: ; */
-            border-radius: 10px;
-            background-color: #fff;
-        }
-
     </style>
 
 </head>
 
 <body>
-    <div class="container">
-        <div class="outer">
-            <div class="card">
-              <div>
-                <img src="" alt="">
-              </div>
-              <div>
-                <div class="title">
-                  High-converting landing pages
-                </div>
-                <div class="description">
-                  Expect nothing less than landing pages that merge elegance with efficiency, setting the stage for your brand's digital ascent.
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div>
-                <img src="" alt="">
-              </div>
-              <div>
-                <div class="title">
-                  High-converting landing pages
-                </div>
-                <div class="description">
-                  Expect nothing less than landing pages that merge elegance with efficiency, setting the stage for your brand's digital ascent.
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div>
-                <img src="" alt="">
-              </div>
-              <div>
-                <div class="title">
-                  High-converting landing pages
-                </div>
-                <div class="description">
-                  Expect nothing less than landing pages that merge elegance with efficiency, setting the stage for your brand's digital ascent.
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div>
-                <img src="" alt="">
-              </div>
-              <div>
-                <div class="title">
-                  High-converting landing pages
-                </div>
-                <div class="description">
-                  Expect nothing less than landing pages that merge elegance with efficiency, setting the stage for your brand's digital ascent.
-                </div>
-              </div>
-            </div>
-        </div>
+    <div class="section-top">
+      <hr class="top-hr">
+      <h1>Card</h1>
+      <hr class="top-hr">
     </div>
 
     <script>
-      const outer = document.querySelector('.outer');
-outer.addEventListener('wheel', function(e) {
-    e.preventDefault();
-    outer.scrollLeft += e.deltaY;
-}, { passive: false });
-
+      
     </script>
 </body>
 </html>
