@@ -209,6 +209,10 @@ body {
   background-position: 10px center; 
 }
 
+.footer-quick-nav a {
+  text-decoration: none;
+}
+
 .mailing {
   padding-left: 40px;
   background-image: url("Assets/sms.svg");
@@ -497,6 +501,11 @@ body {
         font-weight: 800;
     }
     
+    #nav a {
+      text-decoration: none;
+      color: #fff;
+    }
+
     #nav i {
         font-size: 30px;
         font-weight: 800;
@@ -523,7 +532,7 @@ body {
       font-size: 5rem;
       font-weight: 500;
       /* margin-bottom: 200px; */
-      padding-bottom: 50px;
+      /* padding-bottom: 50px; */
       position: relative; /* Add this line */
     }
     
@@ -575,7 +584,7 @@ body {
           margin: 100px 34px;
         }
         #nav {
-          padding: 24px;
+          padding: 12px 24px;
         }
         .navbar {
           padding: 16px 32px;
@@ -639,6 +648,9 @@ body {
     @media (max-width: 470px) {
       #full {
         padding: 160px 24px;
+    }
+    .right {
+      padding: 0px;
     }
 
     .footer-logo {

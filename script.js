@@ -7,11 +7,11 @@ function initGSAP() {
 
   tl.to("#full", {
     top: "0",
-    duration: 0.6
+    duration: 0.5
   });
   tl.from("#full a", {
     // y: 150,
-    duration: 0.7,
+    duration: 0.5,
     stagger: 0.3,
     opacity: 0
   });

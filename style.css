@@ -145,12 +145,13 @@ hr {
 }
 
 .scroll-D img {
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
   margin-right: 5px;
+  margin-top: 4px;
 }
 
 a.scroll-D {
@@ -382,6 +383,97 @@ textarea {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+
+.section-six {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+/* align-items: center; */
+  padding: 100px;
+  height: 100vh;
+
+}
+
+.left-six img {
+  height: 50px;
+  width: 50px;
+}
+
+.six-main-head {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 2rem;
+  font-style: normal;
+}
+
+.six-sub-head {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.1rem;
+  color: #969393;
+}
+
+.card-border {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 0px;
+  border-bottom: 1px solid #e6c9c9;
+  /* background-color: #0000004b; */
+}
+
+.left-six {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40vw;
+}
+.right-six {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40vw;
+}
+.right-head-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.right-six img {
+  height: 450px;
+  width: 450px;
+}
+
+.why {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 1rem;
+  font-style: normal;
+  color: #007aff;
+}
+
+.right-main-head {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 3rem;
+  font-style: normal;
+}
+
+.right-sub-head {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  color: #969393;
+  font-size: 1.2rem;
+  font-style: normal;
 }
 
 /* FAQ */
@@ -626,6 +718,10 @@ img {
   padding-right: 80px;
 }
 
+.footer-quick-nav a {
+  text-decoration: none;
+}
+
 .footer-connect {
   display: flex;
   flex-direction: column;
@@ -769,6 +865,15 @@ input[type="email"]::placeholder {
     padding: 0 30px;
   }
 
+  .section-six {
+    padding: 48px;
+  }
+
+  .right-six img {
+    height: 300px;
+    width: 300px;
+  }
+
   .small-head {
     font-size: 1.8rem;
   }
@@ -853,6 +958,14 @@ input[type="email"]::placeholder {
     right: -30px !important;
   }
 
+  .section-six {
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+  .right-six, .left-six {
+    width: 100%;
+  }
+
   #mains {
     height: 100%;
     width: 100%;
@@ -869,10 +982,15 @@ input[type="email"]::placeholder {
 
 #nav h2 {
   font-family: "DM Serif Display", serif;
-  font-weight: 300;
+  font-weight: 200;
   font-style: italic;
   font-size: 1.5rem;
     font-weight: 800;
+}
+
+#nav a {
+  text-decoration: none;
+  color: #fff;
 }
 
 #nav i {
@@ -901,7 +1019,7 @@ input[type="email"]::placeholder {
   font-size: 5rem;
   font-weight: 500;
   /* margin-bottom: 200px; */
-  padding-bottom: 50px;
+  /* padding-bottom: 3px; */
   position: relative; /* Add this line */
 }
 
@@ -1082,7 +1200,7 @@ input[type="email"]::placeholder {
 
   @media (max-width: 600px) {
     #nav {
-      padding: 24px;
+      padding: 12px 24px;
     }
     .navbar {
       padding: 16px 32px;
@@ -1117,6 +1235,33 @@ input[type="email"]::placeholder {
     .right-Head-category {
       padding: 32px;
     }
+
+    .section-six {
+      padding: 32px;
+    }
+
+    .left-six img {
+      height: 35px;
+      width: 35px;
+    }
+
+    .right-main-head {
+      font-size: 2.2rem;
+    }
+
+    .six-main-head {
+      font-size: 1.5rem;
+    }
+
+    .right-six img {
+      /* text-align: center; */
+      /* margin: 0 auto; */
+      position: relative;
+      left: -30px !important;
+      height: 240px;
+      width: 240px;
+    }
+
     .footer {
       padding: 100px 32px 0px 32px !important;
     }
@@ -1133,7 +1278,7 @@ input[type="email"]::placeholder {
     }
 
     .card__content {
-      padding: 30px 20px;
+      /* padding: 30px 20p; */
     }
     .category-text {
       font-size: 1.2rem;
@@ -1274,7 +1419,15 @@ input[type="email"]::placeholder {
     margin: 10px 0;
     font-size: 1rem;
     line-height: 1.5rem;
-    font-weight: 100;
+    font-weight: 200;
+  }
+
+  .right-main-head {
+    font-size: 1.7rem;
+  }
+
+  .right-sub-head {
+    font-size: 1rem;
   }
   /* .icon-shape {
     width: 5px !important;
