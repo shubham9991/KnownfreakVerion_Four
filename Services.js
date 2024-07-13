@@ -1,3 +1,18 @@
+let lastScrollY = window.scrollY;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+        // Scrolling down
+        navbar.classList.add('hidden');
+    } else {
+        // Scrolling up
+        navbar.classList.remove('hidden');
+    }
+    lastScrollY = window.scrollY;
+});
+
+// GSAP initialization and animation logic
 function initGSAP() {
     var menu = document.querySelector("#nav i");
     var cross = document.querySelector("#full i");
@@ -32,7 +47,6 @@ function initGSAP() {
 
 // Execute the GSAP function
 initGSAP();
-
 
 // For string
 
