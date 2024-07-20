@@ -24,23 +24,44 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 16px 60px;
+  transition: top 0.3s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 199;
+  background-color: white; /* Add background color to ensure visibility */
 }
 
-.logo {
-  font-family: "DM Serif Display", serif;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 1.5rem;
+.navbar.hidden {
+  top: -100px; /* Adjust this value according to the height of your navbar */
 }
 
-.nav-links {
-  display: flex;
-  gap: 38px;
-  font-size: 1rem;
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  
+  .logo {
+    font-family: "DM Serif Display", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 38px;
+    font-size: 1rem;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.nav-links a {
+  text-decoration: none; 
+  color: #263238; 
+  transition: border-bottom 0.3s ease; 
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid #D4D4D4; 
 }
 
 .cta-btn {
@@ -521,6 +542,7 @@ body {
         left: 0;
         backdrop-filter: blur(18px);
         padding: 160px 50px;
+        z-index: 999;
     }
     #full a {
       font-family: "DM Sans", sans-serif;

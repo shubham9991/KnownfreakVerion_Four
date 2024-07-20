@@ -24,25 +24,45 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 16px 60px;
+  transition: top 0.3s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  background-color: white; /* Add background color to ensure visibility */
 }
 
-.logo {
-  font-family: "DM Serif Display", serif;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 1.5rem;
+.navbar.hidden {
+  top: -100px; /* Adjust this value according to the height of your navbar */
 }
 
-.nav-links {
-  display: flex;
-  gap: 38px;
-  font-size: 1rem;
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  
+  .logo {
+    font-family: "DM Serif Display", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 38px;
+    font-size: 1rem;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.nav-links a {
+  text-decoration: none; 
+  color: #263238; 
+  transition: border-bottom 0.3s ease; 
 }
 
+.nav-links a:hover {
+  border-bottom: 2px solid #D4D4D4; 
+}
 .cta-btn {
   display: flex;
   align-items: center;
@@ -163,11 +183,69 @@ a.scroll-D {
 .Section-two {
   display: flex;
   flex-direction: column;
+  background-color: #fff;
+  margin-top: 150px;
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  justify-content: center;
+  height: 100%;
+  padding: 100px 0px;
+  /* background-color: #ac4646; */
+  /* text-align: center; */
+}
+
+.section-card-wrapper {
+  display: flex;
+  flex-wrap: wrap !important;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.big-subhead {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  padding: 30px;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section-two-img {
+  height: 50px;
+  width: 50px;
+}
+
+
+
+.two-card {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  /* background-color: #ac4646; */
+  width: 300px;
+  gap: 10px;
+  /* padding: 30px; */
+  /* border: 30px; */
+  margin: 30px;
+}
+
+.section-two-head {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.section-two-subhead {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
   text-align: center;
+  /* margin-bottom: 30px; */
 }
 
 .mission {
@@ -175,10 +253,12 @@ a.scroll-D {
   font-size: 1rem;
   font-style: normal;
   font-weight: 300;
+  margin: 0 auto;
   /* margin-bottom: 30px; */
 }
 
 .Section-two hr {
+  margin: 0 auto;
   width: 180px;
   margin-top: 5px;
   margin-bottom: 40px;
@@ -186,9 +266,10 @@ a.scroll-D {
 
 .small-head {
   font-family: "DM Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
+  margin: 0 auto;
 }
 
 .mid-head {
@@ -392,7 +473,7 @@ textarea {
   background-color: #fff;
 /* align-items: center; */
   padding: 100px;
-  height: 100vh;
+  height: 100%;
 
 }
 
@@ -1008,6 +1089,7 @@ input[type="email"]::placeholder {
     left: 0;
     backdrop-filter: blur(18px);
     padding: 160px 50px;
+    z-index: 999;
 }
 #full a {
   font-family: "DM Sans", sans-serif;
@@ -1345,9 +1427,9 @@ input[type="email"]::placeholder {
   .big-head {
     font-size: 2rem;
   }
-  .Section-two img {
+  /* .Section-two img {
     width: 230px !important;
-  }
+  } */
 
   .footer-logo {
     padding-right: 0px;

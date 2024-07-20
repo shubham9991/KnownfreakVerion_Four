@@ -8,36 +8,35 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">Knownfreaks</div>
-        <div class="nav-links">
-          <span>About us</span>
-          <span>Blogs</span>
-          <span>Services</span>
-          <span>Packages</span>
-        </div>
-        <div>
-          <button class="cta-btn">
-            <img src="Assets\Arrow.svg" alt="" />
-            <span>Connect with us</span>
-          </button>
-        </div>
-      </nav>
-      <div id="mains">
-        <div id="nav">
-          <h2><a href="index.html">Knownfreak</a></h2>
-            <i class="ri-menu-3-line"></i>
-        </div>
-        <div id="full">
-            <a href="">About us.</a><br>
-            <a href="">Blogs.</a><br>
-            <a href="">Services.</a><br>
-            <a href="">Packages.</a><br>
-  
-            <i class="ri-close-line"></i>
-        </div>
+  <nav class="navbar">
+    <div class="logo">Knownfreaks</div>
+    <div class="nav-links">
+      <span><a href="">About us</a></span>
+      <span><a href="">Blogs</a></span>
+      <span><a href="Services.html">Services</a></span>
+      <span><a href="">Packages</a></span>
     </div>
+    <div>
+      <button class="cta-btn">
+        <img src="Assets\Arrow.svg" alt="" />
+        <span>Connect with us</span>
+      </button>
+    </div>
+  </nav>
+  <div id="mains">
+    <div id="nav">
+        <h2><a href="index.html">Knownfreak</a></h2>
+        <i class="ri-menu-3-line"></i>
+    </div>
+    <div id="full">
+        <a href="">About us.</a><br>
+        <a href="">Blogs.</a><br>
+        <a href="">Services.</a><br>
+        <a href="">Packages.</a><br>
 
+        <i class="ri-close-line"></i>
+    </div>
+</div>
     <div class="main-wrapper">
         <div class="main-heading">
             Contact our team
@@ -54,13 +53,13 @@
           <div class="res-wrapper">
             <div class="label-on-top">
               <label class="form-labels" for="company-name">Company Name</label>
-              <!-- <img src="Assets\buildings.svg" alt=""> -->
               <input class="form-textfields build" placeholder="Your company name" type="text" id="company-name" name="company-name">
             </div>
             <div class="label-on-top">
               <label class="form-labels" for="mobile-number">Mobile Number</label>
-              <input class="form-textfields call" placeholder="10 digit phone number" type="tel" id="mobile-number" name="mobile-number">
-            </div>
+              <input class="form-textfields call" placeholder="10 digit phone number" type="tel" id="mobile-number" name="mobile-number" oninput="validatePhoneNumber(this)">
+          </div>
+          
           </div>
           <div class="res-wrapper">
             <div class="label-on-top">
@@ -84,11 +83,11 @@
             <div class="qwik-heads">Chat with Us</div>
             <div>
               <div class="cta-wrapper">
-                <img src="Assets\whatsapp.svg" alt="">
+                <img src="Assets\whatsapp.svg" alt="" draggable="false">
                 <a href="">Whatsapp</a>
               </div><br>
               <div class="cta-wrapper">
-                <img src="Assets\sms.svg" alt="">
+                <img src="Assets\sms.svg" alt="" draggable="false">
                 <a href="">Send email</a>
               </div>
             </div>
@@ -96,14 +95,14 @@
           <div class="ccc">
             <div class="qwik-heads">Call us</div>
             <div class="cta-wrapper">  
-              <img src="Assets\call.svg" alt="">
+              <img src="Assets\call.svg" alt="" draggable="false">
               <a href="">+1234567890</a>
             </div>
           </div>
           <div class="ccc">
             <div class="qwik-heads">Visit us</div>
             <div class="cta-wrapper">
-              <img src="Assets\location-tick.svg" alt="">
+              <img src="Assets\location-tick.svg" alt="" draggable="false">
               <a href="">Address, Street, City, State</a>
             </div>
           </div>
