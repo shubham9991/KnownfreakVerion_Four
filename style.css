@@ -42,8 +42,14 @@ body {
     font-weight: 700;
     font-style: italic;
     font-size: 1.5rem;
+    text-decoration: none;
   }
   
+  .logo a {
+    text-decoration: none;
+    color: #000;
+  }
+
   .nav-links {
     display: flex;
     gap: 38px;
@@ -215,8 +221,8 @@ a.scroll-D {
 }
 
 .section-two-img {
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
 }
 
 
