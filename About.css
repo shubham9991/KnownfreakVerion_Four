@@ -78,6 +78,7 @@ body {
   -ms-border-radius: 32px;
   -o-border-radius: 32px;
   border-style: none;
+  cursor: pointer;
 }
 
 .cta-btn span {
