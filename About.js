@@ -57,3 +57,18 @@ function initGSAP() {
 
 // Execute the GSAP function
 initGSAP();
+
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzee1_I_GtEeaPIwb7BFj-LIjW72a91-O4XKZXRzFc--_O0oXZEab48o2wb7m3mgDmEMw/exec';
+const form = document.querySelector('.contact-form');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            alert('Thanks! We will reach you shortly.');
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+});

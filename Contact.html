@@ -3,6 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta descriptions -->
+    <meta name="description" content="Get in touch with Knownfreaks for expert solutions in web development, branding, digital marketing, and UI/UX design. We're here to help you with your digital needs.">
+    
+    <!-- Meta keywords -->
+    <meta name="keywords" content="contact Knownfreaks, web development contact, branding contact, digital marketing contact, UI/UX design contact, get in touch, contact form, digital solutions contact">
+    
+    <!-- Author -->
+    <meta name="author" content="Shubham Kapil Kumar">
+    
+    <!-- Link to the favicon -->
+    <link rel="icon" type="image/x-icon" href="Favicos\kflogowhite.ico">
+    
+    <!-- Open Graph meta tags for social media -->
+    <meta property="og:title" content="Contact Us - Knownfreaks">
+    <meta property="og:description" content="Get in touch with Knownfreaks for expert solutions in web development, branding, digital marketing, and UI/UX design. We're here to help you with your digital needs.">
+    <meta property="og:image" content="https://www.yourwebsite.com/path/to/your/logo.png"> <!-- Replace with your logo path -->
+    <meta property="og:url" content="https://www.yourwebsite.com/contact">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us - Knownfreaks">
+    <meta name="twitter:description" content="Get in touch with Knownfreaks for expert solutions in web development, branding, digital marketing, and UI/UX design. We're here to help you with your digital needs.">
+    <meta name="twitter:image" content="https://www.yourwebsite.com/path/to/your/logo.png"> <!-- Replace with your logo path -->
+
+
+
+
     <title>Document</title>
     <link rel="stylesheet" href="Contact.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
@@ -50,7 +79,7 @@
 
     <div class="form-wrapper">
       <div class="left">
-        <form action="" class="contact-form">
+        <form method="post" class="contact-form">
           <div class="res-wrapper">
             <div class="label-on-top">
               <label class="form-labels" for="company-name">Company Name</label>
@@ -59,8 +88,7 @@
             <div class="label-on-top">
               <label class="form-labels" for="mobile-number">Mobile Number</label>
               <input class="form-textfields call" placeholder="10 digit phone number" type="tel" id="mobile-number" name="mobile-number" oninput="validatePhoneNumber(this)">
-          </div>
-          
+            </div>
           </div>
           <div class="res-wrapper">
             <div class="label-on-top">
@@ -76,8 +104,9 @@
             <label class="form-labels" for="message">Message</label>
             <textarea class="form-textarea" id="message" placeholder="Your message" name="message" rows="5"></textarea>
           </div>
-          <button>Send Message</button>
+          <button type="submit">Send Message</button>
         </form>
+        
       </div>
       <div class="right">
           <div class="ccc">

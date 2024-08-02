@@ -158,48 +158,36 @@ Array.from(cards).forEach((card, index) => {
   });
 });
 
-// function shery() {
-//   Shery.imageEffect("#bimg", {
-//     style: 1,
-//     config: {
-//       "a": { "value": 0, "range": [0, 30] },
-//       "b": { "value": -1, "range": [-1, 1] },
-//       "zindex": { "value": -9996999, "range": [-9999999, 9999999] },
-//       "aspect": { "value": 1.920282478350657 },
-//       "ignoreShapeAspect": { "value": true },
-//       "shapePosition": { "value": { "x": 0, "y": 0 } },
-//       "shapeScale": { "value": { "x": 0.5, "y": 0.5 } },
-//       "shapeEdgeSoftness": { "value": 0, "range": [0, 0.5] },
-//       "shapeRadius": { "value": 0, "range": [0, 2] },
-//       "currentScroll": { "value": 0 },
-//       "scrollLerp": { "value": 0.07 },
-//       "gooey": { "value": true },
-//       "infiniteGooey": { "value": false },
-//       "growSize": { "value": 2.28, "range": [1, 15] },
-//       "durationOut": { "value": 1, "range": [0.1, 5] },
-//       "durationIn": { "value": 1.5, "range": [0.1, 5] },
-//       "displaceAmount": { "value": 0.5 },
-//       "masker": { "value": true },
-//       "maskVal": { "value": 1.12, "range": [1, 5] },
-//       "scrollType": { "value": 0 },
-//       "geoVertex": { "range": [1, 64], "value": 1 },
-//       "noEffectGooey": { "value": true },
-//       "onMouse": { "value": 1 },
-//       "noise_speed": { "value": 0.15, "range": [0, 10] },
-//       "metaball": { "value": 0.11, "range": [0, 2], "_gsap": { "id": 23 } },
-//       "discard_threshold": { "value": 0.5, "range": [0, 1] },
-//       "antialias_threshold": { "value": 0.1, "range": [0, 0.1] },
-//       "noise_height": { "value": 0.5, "range": [0, 2] },
-//       "noise_scale": { "value": 0, "range": [0, 100] }
-//     },
-//     gooey: true,
-//     // debug: true
-//   });
 
-//   Shery.imageEffect(".bimg img", {
-//     style: 2,
-//     // debug: true
-//   });
-// }
 
-// shery();
+
+
+
+
+document.getElementById('subscribe-form').addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent form submission
+
+  var form = event.target;
+  var formData = new FormData(form);
+
+  var url = 'https://script.google.com/macros/s/AKfycbyZdO1OdVZGqWtYwg5cBrqOyp4Lui43YbqvB8CMrpBkB92YaK0J4EHSS8EL0DC2P616yQ/exec'; // Replace with your script URL
+
+  fetch(url, {
+    method: 'POST',
+    mode: 'cors',
+    body: formData
+  })
+    .then(response => response.json()) // Parse response as JSON
+    .then(data => {
+      if (data.result === 'success') {
+        alert('Thank you, we will reach out to you shortly');
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+      form.reset(); // Clear input fields
+    })
+    .catch(error => {
+      console.error('Error submitting form:', error);
+      alert('Something went wrong. Please try again.');
+    });
+});
