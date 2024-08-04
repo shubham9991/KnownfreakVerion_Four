@@ -1427,6 +1427,10 @@ input[type="email"]::placeholder {
     font-size: 1.8rem;
   }
 
+  .right-Head-category {
+    display: none;
+  }
+
   .left-Head-category {
     display: none;
   }
